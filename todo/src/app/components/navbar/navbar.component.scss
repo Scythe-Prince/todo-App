@@ -1,0 +1,94 @@
+.nav-bar {
+  margin-top: 15px;
+  border-bottom: 2px solid #eee;
+}
+.nav-bar-project {
+  display: flex;
+  .pin-item {
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 14px;
+    color: var(--main-text-color2);
+  }
+  #task-header {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--main-color);
+  }
+}
+.project-handler {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  h3 {
+    font-weight: 500;
+  }
+  button {
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 13px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.4s;
+    &:hover {
+      background-color: var(--main-color-alt);
+    }
+  }
+}
+.navbar-tools {
+  border-bottom: 2px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-pages {
+    padding: 10px 0px;
+    a {
+      padding: 10px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+  }
+  .navbar-funcs {
+    button {
+      background-color: white;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      font-size: 13px;
+      padding: 6px 12px;
+      margin: 0px 3px;
+      font-weight: 500;
+      cursor: pointer;
+      color: var(--main-color);
+
+      i {
+        color: var(--main-color-alt);
+        margin: 0px 3px;
+      }
+    }
+    .input-container {
+      margin: 0px 10px;
+      border: 2px solid #eee;
+      border-radius: 8px;
+      background-color: var(--section-background);
+      i {
+        color: var(--main-text-color2);
+        margin: 0px 6px;
+        font-size: 14px;
+      }
+    }
+    input {
+      padding: 3px 8px;
+      border: none;
+      flex: 1;
+      caret-color: var(--main-color);
+      background-color: var(--section-background);
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
