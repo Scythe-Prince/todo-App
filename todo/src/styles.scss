@@ -5,7 +5,27 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* Target the scrollbar */
+::-webkit-scrollbar {
+  width: 6px; /* Adjust the width */
+  height: 6px; /* Adjust the height for horizontal scrollbar */
+}
 
+/* Style the scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: transparent; /* Make the track invisible */
+}
+
+/* Style the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background: #b3b3b3; /* Set the thumb color */
+  border-radius: 10px; /* Make the thumb rounded */
+}
+
+/* Style the thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #888; /* Darken the thumb on hover */
+}
 :root {
   --main-color: #2196f3;
   --main-color-alt: #1787e0;
@@ -64,7 +84,7 @@ ul {
   margin: 0;
   padding: 0;
 }
-a{
+a {
   text-decoration: none;
   color: var(--main-text-color2);
 }
@@ -72,6 +92,6 @@ body {
   font-family: "Roboto", serif !important;
 }
 /* global settings */
-.active{
+.active {
   border-bottom: 3px solid var(--main-color);
 }

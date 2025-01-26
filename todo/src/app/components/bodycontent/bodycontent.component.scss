@@ -1,29 +1,113 @@
-.cards-container{
-  .task-holder{
-    .task-info
-    {
-      h3{
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+  border: 1px solid #eee;
+  background-color: white;
+  height: 80vh;
+  .task-holder {
+    overflow-y: scroll;
+    background-color: var(--section-background);
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: 10px 0px;
+    border: 2px solid #eee;
+    .task-info {
+      padding: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      #task-header {
+        display: flex;
+        align-items: center;
 
+        h3 {
+          font-weight: 600;
+        }
+        span {
+          display: inline-block;
+          padding: 4px 6px;
+          border-radius: 6px;
+          background-color: #eee;
+          color: var(--main-text-color);
+          font-size: 13px;
+          margin: 0px 10px;
+        }
       }
-      i{
-
+      i {
+        color: var(--main-text-color);
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 20px;
+        font-weight: bold;
+        &:hover {
+          color: var(--main-text-color2);
+        }
       }
     }
-    .task-content{
-      .task-badges{
-        span{
-
+    .task-content {
+      background-color: white;
+      border: 2px solid #eee;
+      border-radius: 10px;
+      padding: 10px 15px;
+      margin-bottom: 10px;
+      .task-badges {
+        span {
+          padding: 4px 10px;
+          border-radius: 8px;
+          border: none;
+          font-size: 13px;
+          margin-right: 5px;
+          display: inline-block;
+          font-weight: 500;
+        }
+        #badge1 {
+          background-color: #e3edff;
+          color: #1b6dff;
+        }
+        #badge2 {
+          background-color: #a21ee940;
+          color: #9c27b0;
+        }
+        #badge3 {
+          background-color: #ff57223d;
+          color: #ff5722;
+        }
+        #badge4 {
+          background-color: #4caf505c;
+          color: #4caf50;
+        }
+        #badge5 {
+          background-color: #b71c1c59;
+          color: #b71c1c;
         }
       }
-      .task-header{
-        h3{
-
+    }
+    .task-header {
+      margin: 10px 0px;
+      .task-images {
+        img {
+          max-width: 100%;
+          border-radius: 10px;
+          border: 1px solid #eee;
         }
       }
-      .task-deadline{
-        span{
-
+      h3 {
+        font-weight: 600;
+        margin: 15px 0px;
+      }
+    }
+    .task-deadline {
+      span {
+        display: inline-block;
+        font-size: 15px;
+        margin: 0px 3px;
+        font-weight: 600;
+        i {
+          margin: 0px 3px;
         }
+        color: var(--main-text-color2);
       }
     }
   }
