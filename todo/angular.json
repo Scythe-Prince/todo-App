@@ -25,6 +25,8 @@
             "inlineStyleLanguage": "scss",
             "assets": ["src/assets"],
             "styles": [
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeflex/primeflex.css",
               "src/styles.scss",
               "src/styles/normalize.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
